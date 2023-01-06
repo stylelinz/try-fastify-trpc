@@ -1,6 +1,10 @@
-import { serverConfig } from '../config';
-import { createServer } from './server';
+import { serverConfig } from "../config"
+import { createServer } from "./server"
 
-const server = createServer(serverConfig);
+async function main() {
+  const server = await createServer(serverConfig)
 
-server.start();
+  server.start()
+}
+
+main()
